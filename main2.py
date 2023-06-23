@@ -1,11 +1,11 @@
-from Classes.Funcionario_2 import Funcionario
-from Classes.Gerente_2 import Gerente
 
-if __name__=="__main__":
-    func = Funcionario(cpf="048783655665",nome="joao")
-    gerente = Gerente("931.868.330-86","joao",10)
-    print(func.get_informcoes())
-    print(gerente.get_informcoes())
-    print(gerente.get_total_funcionario())
-    print(func.get_total_funcionario())
+from Classes.Animal_2 import Animal,Gato,Cachorro
+gato1 = Gato("Mimi", "Persa","")
+gato1.get_informacoes()
+miado = gato1.miau()
+print(miado)
 
+cachorro1 = Cachorro("Rex", "Labrador","")
+cachorro1.get_informacoes()
+latido = cachorro1.latir()
+print(latido)
