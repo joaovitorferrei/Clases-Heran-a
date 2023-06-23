@@ -1,2 +1,2 @@
-from .Cliente import Cliente
-from .Pedido import Pedido
+from .Cliente_0 import Cliente
+from .Pedido_0 import Pedido

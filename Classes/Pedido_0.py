@@ -1,5 +1,5 @@
 from datetime import datetime
-from .Cliente import Cliente
+from .Cliente_0 import Cliente
 
 class Pedido:
     def __init__(self,prepago=False,numero:str=None,preco=0.0,cliente:Cliente=None) -> None:
