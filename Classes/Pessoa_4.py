@@ -1,28 +1,30 @@
 #Exercicio número 2 da lista letra b
+from decimal import Decimal
 class Pessoa:
-    def __init__(self,Nome:str,idade:int) -> None:
+    def __init__(self,nome:str,idade:int) -> None:
         if isinstance(idade,int):
-            self.Nome = Nome
+            self.nome = nome
             self.idade = idade
+    def display(self):
+        print(f"Nome: {self.nome}\nIdade: {self.idade}")
+
 class Rico(Pessoa):
-    def __init__(self, Nome: str, idade: int,dinheiro) -> None:
-        super().__init__(Nome, idade)
+    def __init__(self, nome:str,idade:int,dinheiro:Decimal) -> None:
+        super().__init__(nome, idade)
         self.dinheiro = dinheiro
-        raise NotImplementedError("Método não implementado.")
     def fazCompras(self):
-        return f"Faz Compras:{self.dinheiro}"
+        return f"Faz Compras:{self.dinheiro} nome {self.nome}"
 
 class Pobre(Pessoa):
-    def __init__(self, Nome: str, idade: int) -> None:
-        super().__init__(Nome, idade)
-        raise NotImplementedError("Método não implementado.")
+    def __init__(self, nome: str, idade: int) -> None:
+        super().__init__(nome, idade)
     
-    def Trabalha(self):
-        return True
-
-class Miseravel(Pessoa):
-    def __init__(self, Nome: str, idade: int) -> None:
-        super().__init__(Nome, idade)
-        raise NotImplementedError("Método não implementado.")
-
+    def trabalha(self):
+        return f"Nome: {self.nome} não aguento mais trabalhar"
     
+class Mendiga(Pessoa):
+    def __init__(self,nome: str, idade: int) -> None:
+        super().__init__(nome, idade)
+
+    def mendiga(self):
+        print(f"nome: {self.nome} min da dois reais")

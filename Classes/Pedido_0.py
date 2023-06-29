@@ -20,3 +20,4 @@ class Pedido:
     def encerrar(self)-> None:
         print("----------- Pedido encerrado -----------")
         self.encerrado=True
+        

@@ -11,7 +11,7 @@ class Livro:
         print(f"autor: {self.autor}")
         print(f"ano: {self.ano}")
 
-t1 = "senhor dos aneis"
+t1 = "Senhor dos aneis"
 a1 = "J. R. R. Tolkien"
 ano1 = "1954" #escolhi o ano como string porque em um projeto maior colocar um número
 l1 = Livro(t1,a1,ano1)# inteiro ia gastar muita memoria
