@@ -12,3 +12,4 @@ if __name__=="__main__":
     #input mendigo
     m1 = Mendiga("Gustavo",15)
     m1.mendiga()
+    
