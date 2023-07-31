@@ -1,0 +1,2 @@
+from .k_Equipamentos import Equipamento
+from .k_Equipamentoa_corrigidos import EquipamentoCorrigido
